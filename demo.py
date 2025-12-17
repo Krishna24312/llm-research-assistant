@@ -1,3 +1,4 @@
+#THIS SHOWS HOW PYDANTIC WORKS
 from pydantic import BaseModel
 
 class User(BaseModel):
