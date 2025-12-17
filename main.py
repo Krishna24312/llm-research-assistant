@@ -38,8 +38,10 @@ prompt = ChatPromptTemplate.from_messages(
             For every user query:
             1. First, use the wikipedia tool to get a solid background summary.
             2. Then, use the web-search tool to find the latest or complementary information.
-            3. Combine insights from both sources into one comprehensive answer.
-
+            3. Combine insights from both sources into one comprehensive answer. 
+            - The `sources` field must contain ONLY URLs of pages you used (Wikipedia + web results).
+            - Put full links starting with https://
+            4. Finally, use the save_text_to_file tool to save the structured research data.
             Wrap the output in this format and provide no other text:
             {format_instructions}
             """,
